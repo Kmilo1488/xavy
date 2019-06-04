@@ -22,6 +22,7 @@
 
 class Activity < ApplicationRecord
   belongs_to :venue
+  has_and_belongs_to_many :categories
 
   enum difficulty: %i(low medium high)
 
