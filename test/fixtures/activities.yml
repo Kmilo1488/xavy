@@ -4,6 +4,7 @@
 #
 #  id          :bigint(8)        not null, primary key
 #  description :text
+#  difficulty  :integer
 #  name        :string
 #  schedule    :text
 #  created_at  :datetime         not null

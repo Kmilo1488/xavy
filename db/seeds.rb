@@ -37,14 +37,14 @@ venues.each.with_index(1) do |venue, index|
   )
 end
 
-Activity.create(name: 'Clase de crossfit', description: 'Ven a entrenar', schedule: 'Lunes a viernes De 8:00am a 5:00pm', venue: Venue.first)
-Activity.create(name: 'Entrada libre', description: 'Ven a entrenar', schedule: 'Todos los díasa las 5:00pm', venue: Venue.first)
+Activity.create(name: 'Clase de crossfit', description: 'Ven a entrenar', schedule: 'Lunes a viernes De 8:00am a 5:00pm', venue: Venue.first, difficulty: 0)
+Activity.create(name: 'Entrada libre', description: 'Ven a entrenar', schedule: 'Todos los díasa las 5:00pm', venue: Venue.first, difficulty: 2)
 
-Activity.create(name: 'Kundalin yoga', description: 'Cuerpo y mente sana', schedule: 'De 8:00am a 5:00pm', venue: Venue.second)
-Activity.create(name: 'Yoga meditación', description: 'Paz mental', schedule: 'De 8:00am a 10:00m y de 2:00pm a 5pm', venue: Venue.second)
+Activity.create(name: 'Kundalin yoga', description: 'Cuerpo y mente sana', schedule: 'De 8:00am a 5:00pm', venue: Venue.second, difficulty: 1)
+Activity.create(name: 'Yoga meditación', description: 'Paz mental', schedule: 'De 8:00am a 10:00m y de 2:00pm a 5pm', venue: Venue.second, difficulty: 2)
 
-Activity.create(name: 'Clase de escalada', description: 'Aprende las bases', schedule: 'De 8:00am a 5:00pm', venue: Venue.third)
-Activity.create(name: 'Entrada libre', description: 'Una hora de acceso a todos los salones', schedule: 'De 8:00am a 5:00pm', venue: Venue.third)
+Activity.create(name: 'Clase de escalada', description: 'Aprende las bases', schedule: 'De 8:00am a 5:00pm', venue: Venue.third, difficulty: 0)
+Activity.create(name: 'Entrada libre', description: 'Una hora de acceso a todos los salones', schedule: 'De 8:00am a 5:00pm', venue: Venue.third, difficulty: 1)
 
-Activity.create(name: 'Pilates reformer', description: 'Estírate', schedule: 'De 8:00am a 5:00pm', venue: Venue.fourth)
-Activity.create(name: 'Pilates re-reformer', description: 'Restírate', schedule: 'De 8:00am a 5:00pm', venue: Venue.fourth)
+Activity.create(name: 'Pilates reformer', description: 'Estírate', schedule: 'De 8:00am a 5:00pm', venue: Venue.fourth, difficulty: 2)
+Activity.create(name: 'Pilates re-reformer', description: 'Restírate', schedule: 'De 8:00am a 5:00pm', venue: Venue.fourth, difficulty: 1)

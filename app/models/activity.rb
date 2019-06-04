@@ -4,6 +4,7 @@
 #
 #  id          :bigint(8)        not null, primary key
 #  description :text
+#  difficulty  :integer
 #  name        :string
 #  schedule    :text
 #  created_at  :datetime         not null
@@ -22,9 +23,12 @@
 class Activity < ApplicationRecord
   belongs_to :venue
 
+  enum difficulty: %i(low medium high)
+
   scope :by_name, -> { order(:name) }
 
   validates :name, presence: true, uniqueness: true
   validates :description, presence: true
   validates :schedule, presence: true
+  validates :difficulty, presence: true
 end
