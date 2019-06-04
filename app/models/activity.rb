@@ -32,4 +32,5 @@ class Activity < ApplicationRecord
   validates :description, presence: true
   validates :schedule, presence: true
   validates :difficulty, presence: true
+  validates :categories, presence: true
 end

@@ -57,6 +57,7 @@ class Admin::ActivitiesController < Admin::ApplicationController
                                   :description,
                                   :schedule,
                                   :venue_id,
-                                  :difficulty)
+                                  :difficulty,
+                                  category_ids: [])
   end
 end
