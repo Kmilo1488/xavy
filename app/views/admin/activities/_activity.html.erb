@@ -12,6 +12,11 @@
     <%= activity.difficulty.capitalize %>
   </td>
   <td>
+    <%- activity.categories.each do |categorie| %>
+      <%= categorie.name %>
+    <%- end %>
+  </td>
+  <td>
     <%= activity.schedule %>
   </td>
   <td class="text-right">

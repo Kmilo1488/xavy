@@ -8,6 +8,11 @@
         <%= activity.description %>
       </p>
       <p class="card-text">
+        <%- activity.categories.each do |categorie| %>
+          <%= categorie.name %>
+        <%- end %>
+      </p>
+      <p class="card-text">
         <%= activity_difficulty(activity) %>
       </p>
     </div>
