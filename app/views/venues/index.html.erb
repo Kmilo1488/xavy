@@ -4,6 +4,14 @@
       Bienvenido a Xavy! Tu directorio de centros deportivos.
     </h1>
   </div>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <%= simple_form_for :search, url: root_path,  html: { novalidate: true, class: 'needs-validation', method: :get  } do |f| %>
+      <%= f.input :name, label: false, input_html: {value: ""} %>
+      <%= f.submit "Search" %>
+      <% end %>
+    </div>
+  </div>
   <hr class="separator" />
   <div class="container-fluid my-5">
     <div class="row">
